@@ -1,0 +1,24 @@
+{
+  "name": "cosimo",
+  "displayName": "Cosimo",
+  "version": "0.1.0",
+  "description": "Discover and compare products with Cosimo, inspect product details, and show curated product cards.",
+  "author": {
+    "name": "Octogen Systems Inc",
+    "url": "https://cosimo.shop"
+  },
+  "homepage": "https://cosimo.shop",
+  "license": "Apache-2.0",
+  "keywords": [
+    "shopping",
+    "fashion",
+    "products",
+    "discovery",
+    "cosimo"
+  ],
+  "icon": "./assets/cosimo-icon.png",
+  "supportUrl": "https://cosimo.shop/contact",
+  "privacyPolicyUrl": "https://cosimo.shop/legal/privacy-policy",
+  "termsOfServiceUrl": "https://cosimo.shop/legal/terms-of-service",
+  "documentationUrl": "https://github.com/octogen-ai/cosimo-claude-plugin#readme"
+}
