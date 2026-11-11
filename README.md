@@ -22,7 +22,7 @@ installation, API key, or credential in a configuration file is required.
 For Claude chat:
 
 1. Download the plugin ZIP from the
-   [GitHub release](https://github.com/octogen-ai/cosimo-claude-plugin/releases/tag/v0.1.0).
+   [GitHub release](https://github.com/octogen-ai/cosimo-claude-plugin/releases/tag/v0.1.1).
 2. Open **Customize > Plugins > Add plugin > Upload plugin**, upload the ZIP,
    and enable Cosimo. This adds the `shop-with-cosimo` skill and connector reference.
 3. Connect Cosimo through the plugin's connector or **Customize > Connectors**.
@@ -36,12 +36,12 @@ A custom connector alone exposes the server's tools without installing the
 shopping skill. The public GitHub package is available for testing; it is not
 an approved Claude directory listing.
 
-For local testing in Claude Code, clone this public package and load it:
-
-```sh
-git clone https://github.com/octogen-ai/cosimo-claude-plugin.git
-claude --plugin-dir "$PWD/cosimo-claude-plugin"
-```
+For local testing in Claude Code, extract the release ZIP and use Claude Code's
+`--plugin-dir` option to select the extracted `cosimo` folder. See
+[load a local plugin](https://code.claude.com/docs/en/plugins/create#load-a-plugin-from-a-directory-or-zip)
+for the current Claude Code instructions. This package has no local server,
+installation script, or executable hook; its tools run through the hosted OAuth
+connector.
 
 Complete the Cosimo OAuth connection through `/mcp`. Each person connects their
 own account; never paste passwords or tokens into chat. The host's discovered
